@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9cfa251def.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9cfa251def.js" crossorigin="anonymous"></script>
+  <title>Word Dictionary</title>
+</head>
+<body class="bg-emerald-200">
+  <div class="wrapper bg-emerald-500 rounded-lg m-auto max-w-3xl p-14 shadow-emerald-900 shadow-2xl mt-20">
+    <h1 class="text-sm sm:text-base md:text-3xl lg:text-4xl text-white">Word Dictionary📗</h1>
+    <div id="search-flex" class="flex justify-between my-5">
+        <input type="text" placeholder="Enter a word you want to search" class="w-4/5 p-5 outline-none rounded-xl" id="search-word">
+        <button id="search" class="p-2 px-10 rounded-xl bg-emerald-100 text-gray-600 hover:text-white hover:bg-emerald-700 transition-all flex items-center gap-1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div id="result" class="text-white">
+      <div class="word-det border-l-4 border-emerald-100 p-4 bg-emerald-600 hidden">
+        <div class="flex gap-6 items-center">
+        <p id="Word" class="text-2xl text-white">Word</p>
+        <button id="play">
+          <i class="fa fa-light fa-volume-high"></i>
+        </button>
+
+        </div>
+        <div class="flex gap-4">
+        <p id="PartofSpeech" class="text-slate-300"></p>
+        <p id="phonetic" class="text-slate-300">phonetic</p>
+        </div>
+      </div>
+      <div class="meaning my-5 border-emerald-100 border-l-4 p-4 bg-emerald-600 hidden" >
+        <p id="DefHead" class="text-2xl text-white">Definition</p>
+        <p id="DefDetail" class="text-slate-300 mt-2">Defination detail</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

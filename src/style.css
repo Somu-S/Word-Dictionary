@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+#result{
+    height: 0;
+    transition: 500ms;
+}
